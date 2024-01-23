@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    display: flex;
+    width: 100%;
+    min-height: 70px;
+    position: fixed;
+    justify-content: space-around;
+    background-color: #292828;
+}
+.coders-assemble-logo{
+    width: 400px;
+    font-weight: 700;
+    /* margin-right: 250px; */
+    font-size: 30px;
+    color: #fff;
+}
+.nav-list{
+    width: 600px;
+    margin-right: 70px;
+
+}
+.nav-ul{
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-ul li{
+    list-style: none;
+}
+.nav-li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+.nav-li:hover, .nav-li a:hover{
+    transform: scale(1.1);
+    color: #f3e709;
+}
+.menu-bar-div{
+    height: 100%;
+    width: 50px;
+    display: none;
+}
+
+
+/*media for 1024px*/
+@media screen and (max-width:1024px) {
+    .coders-assemble-logo{
+        margin-right: 0px;
+        font-size: 25px;
+    }
+    .nav-icons{
+        display: none;
+    }
+}
+
+/*media for 1024px*/
+@media screen and (max-width:800px){
+    .coders-assemble-logo{
+        width: 100%;
+        height: 70px;
+        align-items: center;
+        border-bottom: 1px solid #aaa4a4;
+    }
+    .nav-list{
+        display: none;
+        /* width: 0; */
+        height: auto;
+        width: 100%;
+    }
+    .nav-ul{
+        display: flex;
+        align-items: flex-end;
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+    }
+    .nav-li{
+        padding: 20px;
+        border-bottom: #3a3939 1px solid;
+    }
+    .active{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-bar-div{
+        display: flex;
+        margin: 20px 0;
+        height: 30px;
+        position: absolute;
+        right: 20px;
+        top: 3px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:426px){
+    .coders-assemble-logo{
+        font-size: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+}
