@@ -9,10 +9,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container dark" id="particles-js">
+    <div id="particles-js"></div>
+    <div class="container flex-center">
       <nav>
         <div class="coders-assemble-logo flex-center">Coders Assemble</div>
         <div class="menu-bar-div flex-center" onclick="open_menu()">
@@ -46,8 +53,29 @@
           </ul>
         </div>
       </nav>
+
+      <div class="registration flex-center">
+        <p class="end-time">Registration Ends In</p>
+        <div class="registration-time flex-center">
+          <div class="flex-center time-box">
+            <span class="days"></span> Days
+          </div>
+          <div class="flex-center time-box">
+            <span class="hours"></span> Hrs
+          </div>
+          <div class="flex-center time-box">
+            <span class="minutes"></span> Mins
+          </div>
+          <div class="flex-center time-box">
+            <span class="seconds"></span> Secs
+          </div>
+        </div>
+        <button class="register-btn">
+          <a href="https://www.hackerrank.com/contests/coders-assemble-1" class="register-now">Register Now</a>
+        </button>
+      </div>
     </div>
-    <script src="script.js"></script>
+
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
       particlesJS("particles-js", {
@@ -156,5 +184,6 @@
         retina_detect: true,
       });
     </script>
+    <script src="script.js"></script>
   </body>
 </html>
