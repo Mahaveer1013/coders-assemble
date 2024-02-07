@@ -95,15 +95,20 @@ nav {
   gap: 10px;
 }
 .registration-time span {
-  color: #fef27a;
+  color: #d5fb00;
   font-size: 30px;
 }
 .time-box {
+  align-items: flex-end;
   gap: 10px;
   border-radius: 25px;
   font-size: 20px;
-  width: 130px;
-  height: 100px;
+  color: #fef27a;
+  width: 100px;
+  padding-top: 20px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  height: auto;
 }
 .end-time {
   font-size: 45px;
@@ -116,6 +121,10 @@ nav {
   border: 0;
   box-shadow: 2px black;
   border-radius: 5px;
+}
+.register-btn:hover {
+  background-color: #1aff00;
+  transition: 0.3s;
 }
 .register-btn a {
   color: #292929;
