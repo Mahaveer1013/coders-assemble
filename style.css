@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: "Protest Riot", sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 0.5px;
   text-decoration: none;
+}
+body {
+  height: auto;
+}
+html {
+  scroll-behavior: smooth;
 }
 .flex-center {
   display: flex;
@@ -22,11 +29,12 @@ canvas {
   left: 0;
   background: #292929;
   transition: all 0.3s;
-  z-index: 1;
+  z-index: -1;
 }
 .container {
   align-items: stretch;
-  height: 100vh;
+  /* height: 100vh; */
+  /* flex-direction: column; */
 }
 nav {
   display: flex;
@@ -36,14 +44,15 @@ nav {
   z-index: 99;
   justify-content: space-between;
   background-color: #000000;
-  opacity: 0.8;
+  opacity: 0.95;
   color: #ffffff;
   transition: all 0.3s;
 }
 .coders-assemble-logo {
   width: 400px;
+  color: #fef27a;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 30px;
 }
 .nav-list {
   width: 600px;
@@ -66,7 +75,7 @@ nav {
   text-decoration: none;
   color: #fff;
   white-space: nowrap;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 200;
 }
 .nav-li a:hover {
@@ -79,13 +88,17 @@ nav {
   display: none;
   /* color: #fff; */
 }
+.content {
+  width: 100%;
+  flex-direction: column;
+}
 .registration {
   width: 550px;
-  position: relative;
   height: 300px;
   flex-direction: column;
   z-index: 2;
-  top: 200px;
+  box-shadow: 10px 10px 20px #000000;
+  margin: 200px 0 100px 0;
   background-color: #292929;
   box-shadow: #aaa4a4 5px;
   border-radius: 10px;
@@ -96,7 +109,7 @@ nav {
 }
 .registration-time span {
   color: #d5fb00;
-  font-size: 30px;
+  font-size: 22px;
 }
 .time-box {
   align-items: flex-end;
@@ -119,16 +132,85 @@ nav {
   height: 50px;
   background-color: #fef27a;
   border: 0;
-  box-shadow: 2px black;
+  box-shadow: 2px 2px 2px #000000;
   border-radius: 5px;
 }
 .register-btn:hover {
   background-color: #1aff00;
-  transition: 0.3s;
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 .register-btn a {
   color: #292929;
   font-size: 20px;
+}
+section {
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.events {
+  /* gap: 100px; */
+  justify-content: space-around;
+  width: 95%;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+.event-type {
+  margin-top: 100px;
+  width: fit-content;
+  align-self: flex-start;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  color: #fef27a;
+  font-weight: bolder;
+  padding: 10px 30px;
+  border-bottom: #0000008d 5px solid;
+  box-shadow: 0px 0px 30px 2px #000000;
+  border-radius: 10px;
+}
+.event {
+  min-width: 250px;
+  margin-top: 50px;
+  width: 300px;
+  background-color: #171717;
+  /* border: #fff 1px solid; */
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px #000000;
+  height: auto;
+  padding: 20px;
+  /* position: absolute;
+  top: 700px; */
+}
+.event-img {
+  width: 100%;
+  height: 170px;
+}
+.image {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+}
+.topic {
+  font-size: 25px;
+  color: #fef27a;
+  font-weight: bold;
+  padding: 30px 0;
+  text-align: center;
+}
+.description {
+  text-align: justify;
+  color: #fff;
+  font-size: 90%;
+}
+.description a {
+  color: dodgerblue;
+  text-decoration: underline;
 }
 
 /*media for 1024px*/
@@ -140,6 +222,12 @@ nav {
   .nav-icons {
     display: none;
   }
+  .events {
+    gap: 25px;
+  }
+  .event {
+    min-width: 180px;
+  }
 }
 
 /*media for 1024px*/
@@ -147,9 +235,6 @@ nav {
   .nav-icons {
     display: flex;
     margin-right: 8px;
-  }
-  canvas {
-    display: none;
   }
   .nav-li a {
     display: flex;
@@ -267,10 +352,11 @@ nav {
   .registration {
     width: 300px;
     position: relative;
-    height: 150px;
+    height: 180px;
     flex-direction: column;
     z-index: 2;
-    top: 100px;
+    margin: 250px 0 150px 0;
+    /* top: 100px; */
   }
   .registration-time {
     padding-top: 20px;
@@ -278,7 +364,7 @@ nav {
   }
   .registration-time span {
     color: #fef27a;
-    font-size: 20px;
+    font-size: 15px;
   }
   .time-box {
     gap: 5px;
@@ -292,6 +378,12 @@ nav {
     font-size: 25px;
     color: #fef27a;
   }
+  .time-box {
+    margin: 10px 0;
+  }
+  .registration-time {
+    padding-top: 0;
+  }
   .register-btn {
     width: 140px;
     height: 30px;
@@ -303,5 +395,10 @@ nav {
   .register-btn a {
     color: #292929;
     font-size: 15px;
+  }
+  .event-type {
+    font-size: 25px;
+    font-weight: 900;
+    border-bottom: #fef27a 2px solid;
   }
 }

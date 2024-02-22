@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PEC Coders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -31,13 +37,13 @@
               <a href="#"><i class="fas fa-home nav-icons"></i> Home</a>
             </li>
             <li class="nav-li flex-center" onclick="open_menu()">
-              <a href="#"><i class="fas fa-info-circle nav-icons"></i> About</a>
-            </li>
-            <li class="nav-li flex-center" onclick="open_menu()">
-              <a href="#"
+              <a href="#events"
                 ><i class="fas fa-calendar-alt nav-icons"></i> Events</a
               >
             </li>
+            </li>
+            <li class="nav-li flex-center" onclick="open_menu()">
+              <a href="#"><i class="fas fa-info-circle nav-icons"></i> About</a>
             <li class="nav-li flex-center" onclick="open_menu()">
               <a href="#"><i class="fas fa-images nav-icons"></i> Gallery</a>
             </li>
@@ -54,25 +60,122 @@
         </div>
       </nav>
 
-      <div class="registration flex-center">
-        <p class="end-time">Registration Ends In</p>
-        <div class="registration-time flex-center">
-          <div class="flex-center time-box">
-            <span class="days"></span> Days
+      <div class="content flex-center">
+        <div class="registration flex-center">
+          <p class="end-time">Registration Ends In</p>
+          <div class="registration-time flex-center">
+            <div class="flex-center time-box">
+              <span class="days"></span>
+            </div>
+            <div class="flex-center time-box">
+              <span class="hours"></span>
+            </div>
+            <div class="flex-center time-box">
+              <span class="minutes"></span>
+            </div>
+            <div class="flex-center time-box">
+              <span class="seconds"></span>
+            </div>
           </div>
-          <div class="flex-center time-box">
-            <span class="hours"></span> Hrs
+          <button class="register-btn">
+            <a href="https://www.hackerrank.com/" class="register-now"
+              >Register Now</a
+            >
+          </button>
+        </div>
+
+        <section class="event-section" id="events">
+          <div><p class="event-type">Technical</p></div>
+          <div class="events flex-center">
+            <div class="event">
+              <div class="image">
+                <img
+                  src="https://th.bing.com/th/id/OIP.efUvc7EHRuyVrmjNujR5SQHaEo?rs=1&pid=ImgDetMain"
+                  alt=""
+                  class="event-img"
+                />
+              </div>
+              <div class="topic">Code It</div>
+              <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+                dolor hic? Explicabo aperiam quo quae, velit vero nesciunt beatae
+                nostrum commodi impedit deserunt tenetur? Et consectetur maxime
+                illo praesentium <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="event">
+              <div class="image">
+                <img
+                  src="https://th.bing.com/th/id/OIP.gtaFYKnG-H4GapihmapQaQHaEK?rs=1&pid=ImgDetMain"
+                  alt=""
+                  class="event-img"
+                />
+              </div>
+              <div class="topic">Find the snippet</div>
+              <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+                dolor hic? Explicabo aperiam quo quae, velit vero nesciunt beatae
+                nostrum commodi impedit deserunt tenetur? Et consectetur maxime
+                illo praesentium <a href="#">Read More</a>
+              </div>
+            </div>
           </div>
-          <div class="flex-center time-box">
-            <span class="minutes"></span> Mins
+        </section>
+
+        
+        <section class="event-section">
+          <div><p class="event-type">Non-Technical</p></div>
+        <div class="events flex-center">
+          <div class="event">
+            <div class="image">
+              <img
+                src="https://th.bing.com/th/id/OIP.efUvc7EHRuyVrmjNujR5SQHaEo?rs=1&pid=ImgDetMain"
+                alt=""
+                class="event-img"
+              />
+            </div>
+            <div class="topic">Code It</div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+              dolor hic? Explicabo aperiam quo quae, velit vero nesciunt beatae
+              nostrum commodi impedit deserunt tenetur? Et consectetur maxime
+              illo praesentium <a href="#">Read More</a>
+            </div>
           </div>
-          <div class="flex-center time-box">
-            <span class="seconds"></span> Secs
+          <div class="event">
+            <div class="image">
+              <img
+                src="https://th.bing.com/th/id/OIP.gtaFYKnG-H4GapihmapQaQHaEK?rs=1&pid=ImgDetMain"
+                alt=""
+                class="event-img"
+              />
+            </div>
+            <div class="topic">Find the snippet</div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+              dolor hic? Explicabo aperiam quo quae, velit vero nesciunt beatae
+              nostrum commodi impedit deserunt tenetur? Et consectetur maxime
+              illo praesentium <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="event">
+            <div class="image">
+              <img
+                src="https://th.bing.com/th/id/OIP.efUvc7EHRuyVrmjNujR5SQHaEo?rs=1&pid=ImgDetMain"
+                alt=""
+                class="event-img"
+              />
+            </div>
+            <div class="topic">Find the snippet</div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+              dolor hic? Explicabo aperiam quo quae, velit vero nesciunt beatae
+              nostrum commodi impedit deserunt tenetur? Et consectetur maxime
+              illo praesentium <a href="#">Read More</a>
+            </div>
           </div>
         </div>
-        <button class="register-btn">
-          <a href="https://www.hackerrank.com/" class="register-now">Register Now</a>
-        </button>
+        </section>
       </div>
     </div>
 
@@ -81,7 +184,7 @@
       particlesJS("particles-js", {
         particles: {
           number: {
-            value: 80,
+            value: 100,
             density: {
               enable: true,
               value_area: 800,
